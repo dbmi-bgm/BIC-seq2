@@ -38,4 +38,3 @@ cat $chrlist | parallel --jobs 24 "samtools view -b -h $bam {} | samtools view -
 
 tar -czvf ${prefix}_SeqFilesBICseq2.tar.gz $outdir/${prefix}_*.seq
 
-rm ${prefix}_*.seq
